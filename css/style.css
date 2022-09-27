@@ -37,6 +37,8 @@
 }
 .banner_text{
   align-self: center;
+  padding: 20px;
+  text-align: right;
   
 }
 .banner_text h1{
@@ -52,15 +54,9 @@
   padding-bottom: 12px;
   font-size: 1.5rem;
 }
-
-.banner_text a{
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: #E40069;
-  padding: 8px 12px;
-  grid-column: 2;
-
+.banner img{
+  border-radius: 5px;
+  display: block;
 }
 .sobremim{
   padding: 100px;
@@ -97,6 +93,7 @@
 }
 .glow p{
   color: #A3A3A3;
+  padding: 8px;
 }
 
 .etapas h2{
@@ -132,20 +129,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*** SERVIÇOS É A ESTILIZAÇÃO DA AREA "DISPONIVEL PARA VOCê"***/
 
 .servicos_bg{
   background-color: #f1f0f0;
@@ -165,7 +149,7 @@
 .lista_servicos{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   margin-top: 100px;
 
 }
@@ -297,5 +281,85 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  padding: 40px;
+  padding: 12px;
+}
+
+.midias{
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+
+.logo_footer{
+  width: 50px;
+}
+
+@media (max-width: 500px){
+
+  /*SEÇÃO PRINCIPAL*/
+  .banner{
+    grid-template-columns: 1fr;  
+  }
+  .banner_text h1{
+    max-width: 32ch;
+    font-size: 2rem;  
+  }
+  .banner img{
+    max-width: 100%;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  /* SEÇÃO SOBREMIM */
+  .sobremim{
+    padding: 40px;
+    margin-top: 30px;    
+  }  
+  .descricao h1{
+    font-size: 3.5rem; 
+  }
+   .descricao p{
+    font-size: 1rem;
+    margin-bottom: 100px;  
+  }
+
+
+  /* SEÇÃO GLOWUP */
+  .glow_bg{
+    padding: 40px;
+  } 
+
+
+  /* SEÇÃO DISPONIVEL PARA VOCÊ */
+  .servicos_bg {
+    padding: 60px;
+  }
+  .servicos h2{
+    font-size: 2rem;
+     text-align: center;
+  }
+  .lista_servicos{
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;  
+  }  
+  .lista_servicos span{
+    font-size: 1rem;  
+  }
+  .lista_servicos p{
+    max-width: 80ch;
+  }
+
+
+ /* SEÇÃO "PARA VOCÊ" */ 
+  .content{
+    padding: 40px 20px;  
+  }
+  .box h2{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .box li{
+    font-size: 1rem;
+  }
 }
